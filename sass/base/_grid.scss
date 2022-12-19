@@ -1,0 +1,129 @@
+// Секція Переваг компанії
+
+.advantage-set {
+  @include centeredFlex;
+  margin: -15px;
+  &__item {
+    @include flexBasis;
+    margin: 15px;
+  }
+  &__container {
+    @include centeredFlex;
+  }
+}
+
+// Сфера надання послуг "Functions"
+
+.functions-set {
+  @include centeredFlex;
+  margin: -15px;
+  &__item {
+    @include flexBasis($column: $colTwo, $item: $itemThree);
+    margin: 15px;
+  }
+}
+
+// Команда компанії "Team"
+
+.team-list {
+  @include centeredFlex;
+  margin: -15px;
+  &__item {
+    @include flexBasis;
+    margin: 15px;
+  }
+}
+
+.team-socials {
+  @include centeredFlex;
+  margin: -5px;
+  &__item {
+    @include flexBasis($indent: $indentTwo);
+    margin: 5px;
+  }
+  &__link {
+    @include centeredFlex;
+  }
+}
+
+// Клієнти компанії: "Clients"
+
+.clients-list {
+  @include centeredFlex;
+  margin: -15px;
+  &__item {
+    @include flexBasis($column: $colFive, $item: $itemSix);
+    margin: 15px;
+  }
+  &__link {
+    @include centeredFlex;
+  }
+}
+
+// Portfolio ! Buttons
+
+.portfolio {
+  &__buttons {
+    @include centeredFlex;
+    margin: -4px;
+    &-item {
+      @include flexBasis($indent: $indentButton, $column: $colFour, $item: $itemFive);
+      margin: 4px;
+    }
+  }
+}
+
+// Portfolio-set
+
+.portfolio-set {
+  @include centeredFlex;
+  flex-wrap: wrap;
+  margin: -15px;
+  &__item {
+    @include flexBasis($column: $colTwo, $item: $itemThree);
+    margin: 15px;
+  }
+}
+
+// FOOTER !!! ///
+
+.footer {
+  &__container {
+    @include centeredFlex($alignItems: baseline);
+  }
+}
+
+.footer-socials {
+  @include centeredFlex($alignItems: baseline);
+  &-list {
+    @include centeredFlex;
+    margin: -5px;
+    &__item {
+      @include flexBasis($indent: $indentTwo);
+      margin: 5px;
+    }
+    &__link {
+      @include centeredFlex;
+    }
+  }
+}
+
+.footer-form {
+  @include centeredFlex;
+  &__overlay {
+    display: flex;
+    flex-direction: column;
+  }
+  &__button {
+    @include centeredFlex;
+    align-self: flex-end;
+  }
+}
+
+// Checkbox
+
+.modal-form {
+  &__checkbox {
+    @include centeredFlex;
+  }
+}

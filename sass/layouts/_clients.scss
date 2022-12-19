@@ -1,0 +1,29 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__title {
+    @extend %headings;
+  }
+  &-list {
+    margin-top: 50px;
+  }
+}
+
+.clients-list {
+  &__link {
+    color: getColor('iconsMain');
+    border: 1px solid getColor('iconsMain');
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+
+    transition-property: color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: $timingFunction;
+    &:hover,
+    &:focus {
+      color: getColor('accent');
+      border-color: getColor('accent');
+    }
+  }
+}
