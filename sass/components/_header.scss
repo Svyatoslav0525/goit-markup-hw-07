@@ -1,12 +1,6 @@
 .header {
-  @include centeredFlex;
   width: 100%;
   border-bottom: 1px solid getColor('headerBorder');
-  &__container {
-    @include centeredFlex;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
 }
 
 .header__logo {
@@ -18,7 +12,6 @@
 }
 
 .header-nav__list {
-  @include centeredFlex;
   margin-left: 93px;
   &-item:not(:last-child) {
     margin-right: 50px;
@@ -48,8 +41,7 @@
 // Контакти компінії
 
 .header__contacts {
-  @include centeredFlex;
-  margin-left: 303px;
+  margin-left: auto;
   &-item:first-child {
     margin-right: 30px;
   }
@@ -57,7 +49,6 @@
     fill: currentColor;
   }
   &-link {
-    @include centeredFlex;
     padding-top: 32px;
     padding-bottom: 32px;
     color: getColor('primaryText');

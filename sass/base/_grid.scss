@@ -1,3 +1,23 @@
+// Секція Header
+
+.header {
+  @include centeredFlex;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-nav__list {
+  @include centeredFlex;
+}
+
+.header__contacts {
+  @include centeredFlex;
+  &-link {
+    @include centeredFlex;
+  }
+}
 // Секція Переваг компанії
 
 .advantage-set {
